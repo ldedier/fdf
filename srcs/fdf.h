@@ -18,7 +18,7 @@
 # include <math.h>
 # include "mlx.h"
 # include "../libft/libft.h"
-# define WIN_WIDTH 1300
+# define WIN_WIDTH 1200
 # define WIN_HEIGHT 1000
 # define PROJ_AXO 1
 # define PROJ_OBLIQUE 2

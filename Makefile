@@ -37,12 +37,15 @@ rm = rm -f
 
 all: $(BINDIR)/$(NAME)
 
+macbook:
+	make all
+	
 $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.c $(INCLUDES)
 	$(CC) -c $< -o $@ $(CFLAGS) 
 
 $(BINDIR)/$(NAME): $(OBJECTS)
 	@make -C libft
-	@$(CC) -o $@ $^ $(CFLAGS) -L libft -lft -lmlx -framework OpenGL -framework Appkit
+	@$(CC) -o $@ $^ $(CFLAGS) -L libft -lft -L minilibx_macos -lmlx -framework OpenGL -framework Appkit
 	@echo "$(OK_COLOR)$(NAME) linked with success !"
 clean:
 	@make clean -C libft
