@@ -1,5 +1,5 @@
 # fdf
-42 first infography project
+42 first graphic project
 
 ![oops something went wrong, try to check on https://raw.githubusercontent.com/ldedier/fdf/master/resources/fdf.gif](https://raw.githubusercontent.com/ldedier/fdf/master/resources/fdf.gif)
 
